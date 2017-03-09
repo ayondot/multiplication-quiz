@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif|Just+Another+Hand);
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{ 
+	font-family: 'Bree Serif', serif; 
+	font-size: 7em;
+	background-color: #73C8A9; /* fallback for old browsers */
+	background: url('../img/multi.png'), -webkit-linear-gradient(to left, #73C8A9 , #373B44); /* Chrome 10-25, Safari 5.1-6 */
+	background: url('../img/multi.png'), linear-gradient(to left, #73C8A9 , #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1{
+	font-family: 'Just Another Hand', cursive;
+	background: #262222;
+	color: #9e8e8e;
+	margin-top: 0;
+	text-shadow: 1px 1px #fff;
+	letter-spacing: 8px;
+	font-size: 0.7em;
+	padding-top: 8px;
+}
+
+.settings_wrapper{ display: flex; }
+
+.red_bg{
+	background-color: #ad4d48 !important;
+}
+
+.pink_bg{
+	background-color: #d79696 !important;
+}
+
+.red_text{
+	color: #6b0b0b !important;
+}
+
+.settings{
+	background-color: #cccccc;
+	margin: 1%;
+	width: 20%;
+	border: 2px solid #736262;
+    border-radius: 10px;
+}
+
+.quizbox{
+	margin-top: 50px;
+	background-color: #778592;
+	border-radius: 50px;
+	border: 5px solid #b56969;
+	padding-top: 30px;
+	box-shadow: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+
+#countdown{
+	display: none;
+	width: 50px;
+    margin-left: 145%;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #948a79;
+    height: 50px;
+    border-radius: 100%;
+    padding: 2%;
+}
+
+#submit{ margin: 5% 7% -4% 7%; }
+
+#restart{ margin: 5% 7% -4% 10%; }
+
+#quit{ margin: 5% 7% -4% -5%; }
+
+#result_container{
+	width: auto;
+	display: inline;
+	padding: 20px;
+}
+
+#result{
+	width: 30%;
+	display: inline;
+	margin-top: 5px;
+	background: #ccd796;
+	color: #4f83aa;
+	font-size: 55%;
+	height: 75px;
+}
+
+.btn{
+	color: #842929;
+	width: 30%;
+	font-size: 55%;
+	text-shadow: -2px 2px #346392;
+	background-color: #548a87;
+	border-radius: 50px;
+	box-shadow: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+
+.btn:hover,
+.btn.hover {
+  box-shadow: inset 0 0 0 1px #27496d;
+  color: #842929;
+  text-shadow: -2px 2px #346392;
+}
+
+.btn:focus, .btn:active:focus {
+	outline: none;
+	border: none;
+	color: #842929;
+}
+
+#wanna_continue_wrapper{ display: none; }
+
+/* Animation */
+
+.animated{
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 2;
+  animation-iteration-count: 2;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes flash {
+  from, 50%, to {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  from, 50%, to {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+.flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+}
+
+@media only screen and (max-width: 480px) {
+	body{ font-size: 4em; }
+  	#result{ width: 30%; }
+  	.settings{ width: 50%; }
+  	.quizbox{	margin: 50px; }
+  	.col-xs-12{ width: 90%; }
+}

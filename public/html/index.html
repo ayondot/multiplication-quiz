@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiplication quiz</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<h1 class="col-xs-12 text-center text-uppercase"> Multiplication Quiz Box </h1>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 settings_wrapper">
+				<div class="col-xs-6 settings">
+					<h3 class="col-xs-12"> Highest Score : <span id="highscore">0</span></h3>
+					<h3 class="col-xs-12"> Your Score : <span id="score">0</span></h3>
+					<h3 class="col-xs-12"> Level : <span id="level">0</span></h3>
+				</div>
+				<div class="col-xs-6">
+					<h3 class="col-xs-12 text-center" id="countdown">10</h3>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="quizbox col-xs-12 col-md-offset-2 col-md-8 text-center">
+				<span id="num1"> 7 </span> &times; <span id="num2"> 9</span> <span>= </span>
+				<form id="result_container">
+					<input type="number" class="form-control" id="result" autocomplete="off" placeholder=" ??? ">
+					<button type="submit" id="submit" class="btn">Submit</button>
+					<div id="wanna_continue_wrapper">
+						<button type="submit" id="restart" class="btn">Restart</button>
+						<!-- <button id="quit" class="btn">Quit</button> -->
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>
